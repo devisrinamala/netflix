@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(assests/jpg/banner/backgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 160px;
+    margin: 5px 10px;
+}
+nav button{
+    border: none;
+    outline: none;
+}
+nav .language{
+    padding: 9px 15px;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid #666;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 20px;
+}
+nav .signin{
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 40px;
+    cursor: pointer;
+}
+nav .signin:hover{
+    background-color: rgb(215, 5, 5);
+}
+.header-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header-title h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    max-width: 1300px;
+    margin-bottom: 20px;
+}
+.header-title h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-form{
+    margin: 2% 0%;
+}
+.email-form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-right: 7px;
+    width: 50%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+.email-form input::placeholder{
+    padding: 20px 20px;
+    color: #fff;
+}
+.email-form button{
+    background-color: rgb(250, 23, 23);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.email-form button:hover{
+    background-color: rgb(207, 2, 2);
+}
+.container{
+    display: flex;
+}
+.container-title{
+    padding: 10% 6%;
+}
+.container .image1{
+    margin-right: 9rem;
+    max-width: 100%;
+    height: 400px;
+}
+.container .container-title h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-left: 20%;
+}
+.container .container-title p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 20%;
+    padding-top: 3%;
+}
+.container1{
+    display: flex;
+}
+.container1 .container-title h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-right: 20%;
+}
+.container1 .container-title p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-right: 20%;
+    padding-top: 3%;
+}
+.minibar{
+    max-width: 100%;
+    height: 8px;
+    background-color: #222;
+}
+.faq{
+    padding: 30px 3%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.faq h1{
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.faq ul{
+    margin: 60px auto;
+    max-width: 1500px;
+    width: 100%;
+}
+.faq ul li{
+    list-style: none;
+    padding: 5px;
+}
+.faq ul li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 3px;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+}
+input[type=radio]{
+    display: none;
+}
+.faq .content{
+    background-color: #333;
+    text-align: center;
+    padding: 0% 2%;
+    max-height: 0;
+    overflow: hidden;
+}
+.header-title1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: 30px;
+}
+.header-title1 p{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-title1 .email-form{
+    margin: 2% 0%;
+}
+.header-title1 .email-form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-right: 7px;
+    width: 35%;
+    height: 55px;
+    background: #111;
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+.header-title1 .email-form input::placeholder{
+    padding: 20px 20px;
+    color: #999;
+    font-size: 18px;
+}
+.header-title1 .email-form button{
+    background-color: rgb(250, 23, 23);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header-title1 .email-form button:hover{
+    background-color: rgb(207, 2, 2);
+}
+footer{
+    padding: 50px 10% 10px;
+    border-top: 5px solid #222;
+    color: #666;
+}
+footer h1{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+footer .col{
+    margin: 10px 20px;
+}
+footer .row{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+footer .col a{
+    text-decoration: none;
+    color: #666;
+    font-size: .9rem;
+    display: block;
+    padding: 10px 15px;
+}
+.language{
+    background: transparent;
+    border: 1px solid #666;
+    font-size: .5rem;
+    color: #666;
+    border-radius: 1px;
+    margin-left: 30px;
+    padding: 1%;
+}
+footer h3{
+    padding: 20px 30px;
+    font-size: 10px;
+    font-weight: 400;
+}
+footer i{
+    padding-right: 2px;
+    padding-left: 3px;
+}
+.minibar1{
+    max-width: 100%;
+    height: 2px;
+    background-color: #222;
+}

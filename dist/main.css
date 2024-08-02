@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 4%;
+    background: transparent;
+    position: fixed;
+}
+nav .nav-left img{
+    object-fit: contain;
+    width: 150px;
+}
+nav .nav-middle ul{
+    display: flex;
+    list-style: none;
+    margin: 0 45px;
+}
+nav .nav-middle ul li{
+    font-size: 1.0rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bdbdbd;
+    padding: 5px 10px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+nav .nav-middle ul li:hover{
+    color: #fff;
+}
+nav .nav-right{
+    display: flex;
+    /* margin: 0 0 0 70px; */
+}
+nav .nav-right a{
+    text-decoration: none;
+    color: #bdbdbd;
+    padding: 0px 10px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+nav .nav-right a:hover{
+    color: #fff;
+}
+nav .nav-right .profile img{
+    object-fit: contain;
+    width: 30px;
+    /* margin: -15px 0 0 0; */
+    border-radius: 10px;
+}
+nav .nav-right .profile{
+    display: flex;
+}
+section .posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 1% 2%;
+}
+section .posters::-webkit-scrollbar{
+    display: none;
+}
+section .posters .poster-title .poster{
+    height: 125px;
+    transition: transform 420ms;
+}
+section .posters .poster:hover{
+    transform: scale(1.09);
+}
+section h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2% 2%;
+}
+section .posters .poster-title h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #ffff;
+    text-align: center;
+}
+.banner video{
+    width: 100%;
+}
+i{
+    padding: 4px;
+}
+.banners{
+    margin: -10% 0 0 0;
+}
+footer{
+    padding: 50px 10% 10px;
+    border-top: 5px solid #222;
+    color: #666;
+}
+footer h1{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+footer .col{
+    margin: 10px 20px;
+}
+footer .row{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+footer .col a{
+    text-decoration: none;
+    color: #666;
+    font-size: .9rem;
+    display: block;
+    padding: 10px 15px;
+}
+.language{
+    background: transparent;
+    border: 1px solid #666;
+    font-size: .5rem;
+    color: #666;
+    border-radius: 1px;
+    margin-left: 30px;
+    padding: 1%;
+}
+footer h3{
+    padding: 20px 30px;
+    font-size: 10px;
+    font-weight: 400;
+}

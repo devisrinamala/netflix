@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #000;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7) url(assests/jpg/banner/backgroundimage.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 440px;
+    padding: 60px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.wrapper h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.wrapper form{
+    margin: 25px 0px 65px;
+}
+.wrapper input{
+    height: 50px;
+    width: 100%;
+    background-color: #444;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 2% 1%;
+    padding: 0px 10px;
+}
+.wrapper input::placeholder{
+    color: #c4bdbd;
+    left: 20px;
+    top: 10px;
+    font-size: 1rem;
+    padding: 10% 2%;
+}
+.wrapper form button{
+    width: 100%;
+    background-color: rgb(233, 29, 29);
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    margin: 24px 0px 12px;
+    cursor: pointer;
+}
+.wrapper form button:hover{
+    background-color: rgb(225, 22, 22);
+}
+.wrapper form .forms-help{
+    justify-content: space-between;
+}
+.wrapper form .forms-help input[type="checkbox"]{
+    height: 17px;
+    width: 17px;
+}
+.wrapper form .forms-help label{
+    color: #c6c2c2;
+    font-size: 12px;
+    flex-grow: 1;
+}
+.wrapper form .forms-help a{
+    color: #c6c2c2;
+    text-decoration: none;
+    padding-left: 140px;
+    font-size: 12px;
+}
+.wrapper form .forms-help .sign-up{
+    font-size: 16px;
+    color: #737373;
+    margin-top: 60px;
+    font-weight: 400;
+    display: flex;
+}
+.wrapper form .forms-help .sign-up a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+.wrapper form .forms-help .terms h6{
+    color: #8c8c8c;
+    font-size: 13px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.wrapper form .forms-help .terms h6 span{
+    cursor: pointer;
+    text-decoration: dotted;
+}
